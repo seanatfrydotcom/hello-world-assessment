@@ -11,9 +11,9 @@ public class App {
 	public static void main(String[] args) {
 
 		UserService userService=new UserService();
-		User user1=new User("John","Doe","1 Some St","Apt 1","Some City","MI","48238","US",new Date());
-		User user2=new User("Jane","Doe","2 Some St","Some City","OH","49121","US",new Date());
-		User user3=new User("John","Smith","3 Any St","Some City","IN","42238","US",new Date());
+		User user1=new User("John","Doe","1 Some St","Apt 1","Some City","MI",48238,"US",new Date());
+		User user2=new User("Jane","Doe","2 Some St","Some City","OH",49121,"US",new Date());
+		User user3=new User("John","Smith","3 Any St","Some City","IN",42238,"US",new Date());
 		System.out.println("*** Persist - start ***");
 		userService.save(user1);
 		userService.save(user2);
